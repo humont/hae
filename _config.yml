@@ -1,30 +1,28 @@
-# Site settings
+---
 title: Hare and Edelweiss
-tagline: "Bespoke Cushions"
-sass:
-  style: compressed
-
-# Collections
+timezone: UTC
 collections:
-  projects:
-    title: Projects
-    output: true
   posts:
     title: Posts
     output: true
-
-# Social
-socialimg:
+  projects:
+    title: Projects
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+tagline: Bespoke Cushions
+sass:
+  style: compressed
+socialimg: 
 facebook: fbusername
 github: ghusername
 instagram: hareandedelweiss
-
-# Contact
-phone: "0000000" # This is my real number. You should text me.
-email: "hello@me.com" # This is my real email address. Please don't email me.
-
-# Use this for production
-#sass:
-#    style: :compressed
-
-exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+phone: '0000000'
+email: hello@me.com
+exclude:
+- ".scss"
+- README.md
+- node_modules
+- gruntfile.js
+- package.json
