@@ -15,11 +15,11 @@ tagline: Bespoke Cushions
 sass:
   style: compressed
 socialimg: 
-facebook: fbusername
-github: ghusername
+facebook: 
+github: humont
 instagram: hareandedelweiss
-phone: '0000000'
-email: hello@me.com
+phone: 
+email: 
 exclude:
 - ".scss"
 - README.md
