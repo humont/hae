@@ -1,0 +1,25 @@
+// Nav //
+
+nav {
+  padding-left: 1em;
+  padding-right: 1em;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1em;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
