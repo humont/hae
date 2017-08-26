@@ -1,7 +1,6 @@
 # Site settings
 title: Hare and Edelweiss
 tagline: "Bespoke Cushions"
-baseurl: /hae
 sass:
   style: compressed
 
