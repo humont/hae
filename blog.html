@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+  <div class="row h-50">
+    <div class="col l1of2 ">
+      <div id="blogimage" class="bg-img row">
+        <div class=" mh-auto mv-auto  s_only ph4">
+          <div class="n ph6_l ph4_m light tc_s bg-img__text pa4">
+            <p>A collection of writings on my methods and thought processes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col dfc l1of2 bg_brand-blue m-l_only overlay_fabric_blue">
+      <div class=" mv-auto">
+        <div class="tc xl_l l_m ph6_l ph4_m light tc_s">
+          <p>A collection of writings on my methods and thought processes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+
+    {% for post in site.posts %}
+
+  <div class="row pv4">
+    <div class="">
+      <h3 class="pv1">{{ post.title }}</h3>
+      <div class="pv1">{{ post.date | date_to_long_string }}</div>
+      <div class="pv4">
+        <a href="{{ post.url }}" class="">Read Post</a>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+
+  </div>

@@ -2,6 +2,10 @@
 /*----- text-Color ------*/
 /*-----------------------*/
 
+.highlight {
+  color: $alert-color;
+}
+
 .light {
   color: $text-color_light;
 
@@ -20,13 +24,13 @@
 
 .brand-green{
   color:$primary-color;
-  
+
     &_v-light{color: $primary-color_v-light}
-    
+
     &_light{color: $primary-color_light}
-    
+
     &_dark{color: $primary-color_dark}
-    
+
     &_v-dark{color: $primary-color_v-dark}
 }
 

@@ -4,23 +4,37 @@
 
 html {
   margin: 0;
-  color: $text-color_light
+  // background: url(/assets/hareandmoon.svg) repeat;
+  background-color: white;
 }
 
 body {
-  background-color: $secondary-color;
   font-family: $body-fonts;
   font-weight: 300;
   letter-spacing: .5px;
   line-height: 1.6;
   margin: auto;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
 }
 
-header, main, footer {
-  flex: 1;
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: #ffffff;
+    left: 0;
+    right: 0;
+    height: 1.5em;
+    z-index: 800
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+body {
+    z-index: 800;
+    border-left: 1.5em solid #ffffff;
+    border-right: 1.5em solid #ffffff;
 }
 
 a {
