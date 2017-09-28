@@ -38,15 +38,19 @@
 
 .overlay{
 
+  &_symphony {
+    background: url(/assets/patterns/symphony.png);
+  }
+
   &_ham {
-    background: url(/assets/hareandmoon.svg) repeat;
+    background: url(/assets/patterns/hareandmoon.svg) repeat;
   }
 
   &_fabric {
-    background: url(/assets/fabric_plaid.png) repeat;
+    background: url(/assets/patterns/fabric_plaid.png) repeat;
   }
 
   &_fabric_blue {
-    background: linear-gradient(rgba($color-secondary-1-0, 0.75), rgba($color-secondary-1-0, 0.75)), url(/assets/45degreee_fabric.png);
+    background: linear-gradient(rgba($color-secondary-1-0, 0.75), rgba($color-secondary-1-0, 0.75)), url(/assets/patterns/45degreee_fabric.png);
   }
 }

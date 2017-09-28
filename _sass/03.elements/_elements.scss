@@ -19,7 +19,7 @@ body {
 body:before, body:after {
     content: "";
     position: fixed;
-    background: #ffffff;
+    background: url(/assets/patterns/symphony.png) repeat;
     left: 0;
     right: 0;
     height: 1.5em;
@@ -35,6 +35,7 @@ body {
     z-index: 800;
     border-left: 1.5em solid #ffffff;
     border-right: 1.5em solid #ffffff;
+    border-image: url(/assets/patterns/symphony.png);
 }
 
 a {
