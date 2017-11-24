@@ -1,0 +1,70 @@
+/* Modal */
+
+/* The Modal (background) */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+/* Modal Content/Box */
+.modal__content {
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 100%; /* Could be more or less, depending on screen size */
+    opacity: 1;
+    transition: all 1s;
+}
+
+@include small_only {
+  .modal__content {
+    margin: 15% auto;
+  }
+}
+
+/* Show and hide */
+.hide {
+  display: none;
+
+}
+
+
+/* Modal Images */
+
+.img__container {
+
+  img {
+    width: 65vw;
+    max-width: 400px;
+    min-width: 200px;
+    height: auto;
+    position: relative;
+    box-shadow: 5px -3px 29px 0px rgba(0,0,0,0.75);
+    transition: all 3s;
+
+
+    &:first-child {
+      margin-left: 25%;
+    }
+
+    &:last-child {
+      margin-right: 25%;
+      top: -50px;
+    }
+  }
+}
+
+
+.close-warning {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: #ffffff;
+  background-color: #0f3849;
+  line-height: 1;
+}

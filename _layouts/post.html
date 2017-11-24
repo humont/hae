@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="ph4_l row">
+
+    <div class="row mt5 mb6">
+      <div class="col dfc s4of5">
+        <img class="mh-auto mv-auto post__image_large" src="{{ page.image }}" alt="">
+      </div>
+      <div class="col s1of5 dfc l post__title" data-scroll-speed="4">
+        <span class="mt-auto" style="background-color:{{ page.color }}">{{ page.title }}</span><br>
+        <span style="background-color:{{ page.color }}"> {{ page.date | date_to_string }}</span>
+      </div>
+    </div>
+
+
+  <div class="ph5_l  ph2">
+    {{ content }}
+  </div>
+
+</div>

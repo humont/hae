@@ -1,24 +1,90 @@
 ---
-layout: default
+layout: home
+color: "#aacec4"
 ---
+<section class="tc mt6_m mt5 bg-set" data-background-color="#aacec4">
+  <p class="xl_m l">At <b class="fw7">Hare and Edelweiss</b>, we create bespoke, original, luxury pieces of homeware.</p>
+  <p class="l_m n tj">We are a family company and share a love of unique design and quality fabrics. Based in Edinburgh, we draw on both city and countryside styles, and are perfectly placed to serve an international market.</p>
 
-<section class=" container">
-  <div class="">
-    <!-- image -->
-    <div class="image_face">
+  <div class="bg-set" data-background-color="#aacec4">  </div>
+
+</section>
+
+
+
+
+<section class=" mv6 mv7_m">
+
+  <div class="row section-title__container">
+
+    <div class="col ml-auto section-title">
+      <div class="  dfc mt7" data-scroll-speed="10">
+        <span class=" l">About the creators</span>
+        <span class="xl fw7 mr5_l ">Justine and Jennie</span>
+      </div>
+
+      <div class=" image image_creators">
+      </div>
     </div>
 
-    <!-- title -->
-    <div class="title">
-    </div>
-
-    <!-- blurb -->
-    <div class="blurb">
-    </div>
-
-    <!-- next section -->
-    <div class="">
-    </div>
 
   </div>
+
+</section>
+
+<section id="about-section" class="   mv6 mb6_m l_m n bg-set" data-background-color="#fff2fa">
+  <p class="pv4"><span class="xl_m l"><b class="fw7">Justine’s</b> passion for design began with altering vintage clothing.</span> As her stitching skills were honed, Justine began to expand by making simple homeware gifts for friends and family, combining her skills and passion until requests for commissions became so numerous the natural conclusion was to set up a business. </p>
+
+  <p class="pv4"><span class="xl_m l"><b class="fw7 bg-set" data-background-color="#fff2fa">Jennie</b> has been creating magical illustrations for her family for over three decades.</span> Her eye for detail and ’magic’ touch have evolved through beautifully decorated children’s nurseries and bedrooms to masterfully illustrated, personalised story books for her own children. As Jennie’s artistic capabilities were recognised, friends and family began to commission her for sketches and paintings of much-loved pets, and for the beautifully painted furniture she had become renowned for.  <span class="bg-set" data-background-color="#fff2fa"></span>Never one to rest on her laurels, Jennie has immersed herself in designing intricate and charming motifs for our commissions which delight and enchant in equal measure.</p>
+</section><span class="bg-set" data-background-color="#0f3849"></span>
+
+
+
+<section class="mv5 mv4_m light" data-background-color="#0f3849">
+  <div class="row section-title__container">
+
+    <div class="col ml-auto section-title">
+      <div class="  dfc mt7" data-scroll-speed="25">
+        <span class=" l ">Cushions and upholstery</span>
+        <span class="xl fw7 ">Portfolio</span>
+      </div>
+
+      <div class=" image image_hae_label">
+
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<section id="portfolio-section" class="xl_m l tc  mv6 bg-set dark-section light" data-background-color="#0f3849">
+
+
+  <div class="xl_m l mb3">
+    <!-- *click on a name to see pictures from that project --> Coming Soon
+  </div>
+
+  <div class="">
+    {% for project in site.projects %}
+
+    <button class="project-link modal__link bg-set" data-background-color="#0f3849">{{ project.title }}</button> /
+
+    <!-- The Modal -->
+    <div id="{{ project.title }}" class="modal hide">
+
+      <!-- Modal content -->
+      <div class="modal__content">
+        <span class=" close-warning">*click anywhere to close</span>
+        <div class="img__container">
+            <img src="{{ project.image-1 }}" alt="">
+            <img src="{{ project.image-2 }}" alt="">
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+
+
 </section>

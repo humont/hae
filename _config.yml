@@ -7,19 +7,39 @@ collections:
     output: true
   projects:
     title: Projects
-    output: true
-  uploads:
-    title: Uploads
-    output: true
+    output: false
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      image-1:
+      image-2:
+      title:
+      about:
+  # - scope:
+    #   path: ""
+    #   type: posts
+    # values:
+    #   layout: post
+    #   title:
+    #   image:
+    #   date:
+    #   about:
+    #   menu: "dark"
+    #   color: "#fff2fa"
+
 tagline: Bespoke Cushions
+
 sass:
   style: compressed
-socialimg: 
-facebook: 
+
+socialimg:
+facebook:
 github: humont
 instagram: hareandedelweiss
-phone: 
-email: 
+phone:
+email:
 exclude:
 - ".scss"
 - README.md

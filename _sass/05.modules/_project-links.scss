@@ -1,0 +1,12 @@
+/* Project Links */
+
+.project-link {
+  background: none;
+  font-family: $header-fonts;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

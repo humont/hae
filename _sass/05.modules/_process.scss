@@ -1,0 +1,13 @@
+/* Process */
+
+.process {
+  &__image {
+    height: auto;
+    width: 100%;
+
+    &_large{
+      width: 110%;
+    }
+
+  }
+}

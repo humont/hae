@@ -2,44 +2,19 @@
 /*-- Base/Element styles -----------------*/
 /*----------------------------------------*/
 
-$border-color: rgba(24, 40, 85, 1);
 
 html {
   margin: 0;
-  // background: url(/assets/hareandmoon.svg) repeat;
-  background-color: white;
 }
 
 body {
-  font-family: $body-fonts;
+  font-family: $header-fonts;
   font-weight: 300;
-  letter-spacing: .5px;
-  line-height: 1.6;
+  letter-spacing: 1;
+  line-height: 1.8;
   margin: auto;
 }
 
-body:before, body:after {
-    content: "";
-    position: fixed;
-    background-color: $border-color;
-    // background: url(/assets/patterns/symphony.png) repeat;
-    left: 0;
-    right: 0;
-    height: 1.5em;
-    z-index: 800
-}
-body:before {
-    top: 0;
-}
-body:after {
-    bottom: 0;
-}
-body {
-    z-index: 800;
-    border-left: 1.5em solid $border-color;
-    border-right: 1.5em solid $border-color;
-    // border-image: url(/assets/patterns/symphony.png);
-}
 
 a {
   color: inherit;

@@ -1,38 +1,34 @@
 ---
 layout: default
+color: "#fff2fa"
+menu: "dark"
 ---
 
-  <div class="row h-50">
-    <div class="col l1of2 ">
-      <div id="blogimage" class="bg-img row">
-        <div class=" mh-auto mv-auto  s_only ph4">
-          <div class="n ph6_l ph4_m light tc_s bg-img__text pa4">
-            <p>A collection of writings on my methods and thought processes</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="col dfc l1of2 bg_brand-blue m-l_only overlay_fabric_blue">
-      <div class=" mv-auto">
-        <div class="tc xl_l l_m ph6_l ph4_m light tc_s">
-          <p>A collection of writings on my methods and thought processes</p>
-        </div>
-      </div>
+
+  <div class="row mt5 mb6">
+    <div class="col dfc l1of2">
+      <img class="mh-auto mv-auto process__image_large" src="/assets/images/stag.png" alt="" data-scroll-speed="4">
+    </div>
+    <div class="col l1of2 l" >
+      <p>Welcome to our blog. Every now and again we'll write about new design ideas and inspirations for our work.</p>
+      <p>Enjoy!</p>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row mv5">
+
+    <div class="mh-auto xl tc pv2">Posts:</div>
 
     {% for post in site.posts %}
 
-  <div class="row pv4">
+  <div class="row">
     <div class="">
-      <h3 class="pv1">{{ post.title }}</h3>
-      <div class="pv1">{{ post.date | date_to_long_string }}</div>
-      <div class="pv4">
-        <a href="{{ post.url }}" class="">Read Post</a>
-      </div>
+      <div class="l">{{ post.title }}</div>
+      <span class="n">{{ post.about }} ...</span>
+      <span class="">
+        <a href="{{ post.url }}" class=""> Read</a>
+      </span>
     </div>
   </div>
 

@@ -1,18 +1,35 @@
-{% include head.html %}
+---
+layout: base
+---
 
-<!-- Site Wrapper -->
-
-<body class="row ">
-
-
-
-
-
-
-{{ content }}
+<div class="row">
+  <div class="row top-section">
+    <div class="row top-section_short">
+          <a href="{{ site.github.url }}/" class="mh-auto mv-auto  no-underline "><h3 class="title grow fw1_m fw8 xl light">Hare and Edelweiss</h3></a>
+    </div>
 
 
+  </div>
 
-</body>
 
-{% include footer.html %}
+  <div style="background-color: {{ page.color }}" class="row bottom-section bottom-section_short"  >
+
+    <div class="col structural m-l_only">
+    </div>
+
+    <div class="col mh-auto container ph4_l mv4 {{ page.menu }}">
+      {% include nav.html %}
+
+      {{ content }}
+
+      <div class="{{ page.menu }}">
+        {% include nav.html %}
+      </div>
+    </div>
+
+    <div class="col logo m-l_only">
+      <img id="logo" src="/assets/hae.svg" alt="Hare and Moon pattern" style="opacity:0;">
+    </div>
+
+  </div>
+</div>

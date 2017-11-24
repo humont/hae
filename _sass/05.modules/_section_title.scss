@@ -1,0 +1,27 @@
+/* Section Title */
+
+.section-title__container {
+
+}
+
+.section-title {
+  position: relative;
+}
+
+.section-title  div:first-child {
+  font-family: $header-fonts;
+  position: absolute;
+  right: 2em;
+  white-space: nowrap;
+}
+
+@include medium-up {
+  .section-title {
+    margin-right: 3em;
+  }
+
+  .section-title  div:first-child {
+    right: 10em;
+  }
+
+}

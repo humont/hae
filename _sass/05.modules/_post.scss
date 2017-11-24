@@ -1,0 +1,16 @@
+/* Post */
+
+
+.post {
+  &__image {
+    &_large{
+      width: 75%;
+    }
+
+  }
+
+  &__title {
+    margin-left: -8rem;
+    white-space: nowrap;
+  }
+}

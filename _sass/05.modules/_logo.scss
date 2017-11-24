@@ -1,0 +1,46 @@
+/* Logo */
+
+.logo {
+  flex: 0;
+  opacity: 0.5;
+}
+
+.logo img {
+    width: 8rem;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+@include small_only {
+  .logo img {
+    margin-left: 20%;
+
+  }
+}
+
+@include medium_up {
+  .logo img {
+    width: 8rem;
+    top: 2em;
+    right: 2em;
+    margin-top: 3.5em;
+    margin-right: 1em;
+  }
+}
+
+#logo {
+  transition: all 1s;
+  fill: white;
+}
+
+.structural {
+  min-width: 12rem;
+  flex: 0;
+  content: "";
+  opacity: 0;
+}
