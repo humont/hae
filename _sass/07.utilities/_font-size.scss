@@ -2,14 +2,14 @@
 /*----- Font-size ------*/
 /*----------------------*/
 
-.xxs{font-size: 0.422rem}
-.xs{font-size: 0.563rem}
-.s{font-size: 0.75rem}
-.n{font-size: 1rem}
-.l{font-size: 1.333rem}
-.xl{font-size: 1.777rem}
-.xxl{font-size: 2.369rem}
-.xxxl{font-size: 7.478rem}
+.xxs{@include ms-respond(font-size,-3);}
+.xs{@include ms-respond(font-size,-2);}
+.s{@include ms-respond(font-size,-1);}
+.n{@include ms-respond(font-size,1);}
+.l{@include ms-respond(font-size,2);}
+.xl{@include ms-respond(font-size,3);}
+.xxl{@include ms-respond(font-size,4);}
+.xxxl{@include ms-respond(font-size,5);}
 
 @include small-only {
   .xxs_s{font-size: 0.422rem}
@@ -42,5 +42,5 @@
   .xl_l{font-size: 1.777rem}
   .xxl_l{font-size: 2.369rem}
   .xxxl_l{font-size: 7.478rem}
-  
+
 }

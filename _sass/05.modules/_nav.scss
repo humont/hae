@@ -1,25 +1,49 @@
-// Nav //
+/* Navigation */
 
 nav {
-  padding-left: 1em;
-  padding-right: 1em;
+  z-index: 9999;
 
-  ul {
-    display: flex;
-    flex-direction: row;
+  #menu {
+    position: fixed;
+  }
+
+  ul{
+    margin-left: 0.5em;
+
+
 
     li {
-      margin-left: auto;
-      margin-right: auto;
-      padding: 1em;
+      position: fixed;
 
       &:first-child {
-        margin-left: 0;
+        bottom: 1.5em;
+        left: 10em;
+      }
+
+      &:nth-child(2) {
+        transform: rotate(-45deg);
+        bottom: 11em;
+        left: 6em;
       }
 
       &:last-child {
-        margin-right: 0;
+        transform: rotate(-90deg);
+        bottom: 12em;
+        left: 0;
       }
     }
+
+    svg {
+      fill: white;
+      transition: .1s;
   }
 }
+
+
+  svg:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+@include small-only

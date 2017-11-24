@@ -16,14 +16,14 @@ ant
 /*-- Small Screens ONLY -------------*/
 @include small-only {
   .m-l_only{
-    display: none ;
+    display: none !important;
   }
 }
 
 /*-- Small & Medium Screens -----------------*/
 @media (max-width: $medium - 1px) {
   .l_only {
-    display: none ;
+    display: none !important;
   }
 }
 
@@ -31,20 +31,20 @@ ant
 
 @media (max-width: $small - 1px), (min-width: $medium) {
     .m_only{
-      display: none ;
+      display: none !important;
     }
 }
 
 @media (min-width:$small) and (max-width: $medium - 1px ) {
   .s-l_only{
-    display: none ;
+    display: none !important;
   }
 }
 
 /*-- Medium & large Screens --------------------*/
 @include medium-up {
   .s_only{
-    display: none ;
+    display: none !important;
   }
 }
 
@@ -54,7 +54,7 @@ ant
 
 
   .s-m_only{
-    display: none ;
+    display: none !important;
   }
 }
 

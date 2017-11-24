@@ -2,6 +2,11 @@
 /*------ Position -------*/
 /*-----------------------*/
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .static{position:static;}
 .relative{position:relative;}
@@ -9,7 +14,9 @@
 .fixed{position:fixed;}
 
 /* ALWAYS USE WITH COORDINATES MODULE */
-.sticky{position:-webkit-sticky;position:sticky; }
+.sticky{
+  position:-webkit-sticky;
+  position:sticky; }
 
 @include small-only {
 
