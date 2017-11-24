@@ -1,5 +1,32 @@
 /* background image */
 
+.top-section {
+  background-image: url(/assets/images/stag_hare_3.png);
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+
+  &_short {
+    height: 20vh;
+  }
+}
+
+.bottom-section {
+  box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+  z-index: 1;
+  margin-top: 80vh;
+  margin-bottom: 2em;
+  transition:  1s;
+
+  &_short {
+    margin-top: 20vh
+  }
+}
+
+
 .bg-img {
   height: 100%;
   width: 100%;
@@ -51,6 +78,6 @@
   }
 
   &_fabric_blue {
-    background: linear-gradient(rgba($color-secondary-1-0, 0.75), rgba($color-secondary-1-0, 0.75)), url(/assets/patterns/45degreee_fabric.png);
+    background: linear-gradient(rgba(#1c392c, 0.9), rgba(#1c392c, 0.9)), url(/assets/patterns/45degreee_fabric.png);
   }
 }

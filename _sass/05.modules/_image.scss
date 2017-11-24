@@ -1,0 +1,31 @@
+/* Image */
+
+.image {
+
+  min-height: 200px;
+  min-width: 200px;
+  width: 30vw;
+  max-height: 350px ;
+  max-width: 400px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+
+  &_hae_label {
+    background-image: url(/assets/images/hae_label.png);
+    box-shadow: -2px 26px 76px -19px rgba(0,0,0,0.75);
+    background-repeat: repeat;
+  }
+
+  &_creators {
+    background-image: url(/assets/images/creatorsgray.png);
+    min-height: 300px;
+    height: 120%;
+  }
+
+  &_big_square {
+    background-image: url(/assets/patterns/hareandmoon.svg);
+    min-height: 300px;
+  }
+}
