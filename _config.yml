@@ -5,6 +5,7 @@ collections:
   posts:
     title: Posts
     output: true
+    color: "#fff2fa"
   projects:
     title: Projects
     output: false
