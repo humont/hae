@@ -1,6 +1,7 @@
 ---
 title: Hare and Edelweiss
 timezone: UTC
+
 collections:
   posts:
     title: Posts
@@ -11,15 +12,24 @@ collections:
   uploads:
     title: Uploads
     output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      color: "#fff2fa"
+
 tagline: Bespoke Cushions
 sass:
   style: compressed
-socialimg: 
-facebook: 
+socialimg:
+facebook:
 github: humont
 instagram: hareandedelweiss
-phone: 
-email: 
+phone:
+email:
 exclude:
 - ".scss"
 - README.md
