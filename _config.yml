@@ -13,31 +13,28 @@ collections:
     title: Uploads
     output: true
 defaults:
-  -
-    scope:
-      path: ''
-      type: projects
-    values:
-      image-1:
-      image-2:
-      title:
-      about:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      color: "#fff2fa"
-
+- scope:
+    path: ''
+    type: projects
+  values:
+    image-1: 
+    image-2: 
+    title: 
+    about: 
+- scope:
+    path: ''
+    type: posts
+  values:
+    color: "#fff2fa"
 tagline: Bespoke Cushions
 sass:
   style: compressed
-socialimg:
-facebook:
+socialimg: 
+facebook: 
 github: humont
 instagram: hareandedelweiss
-phone:
-email:
+phone: 
+email: 
 exclude:
 - ".scss"
 - README.md
