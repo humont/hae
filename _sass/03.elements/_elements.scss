@@ -3,9 +3,6 @@
 /*----------------------------------------*/
 
 html {
-  margin: 0;
-  // background: url(/assets/hareandmoon.svg) repeat;
-  background-color: white;
 }
 
 body {
@@ -16,27 +13,6 @@ body {
   margin: auto;
 }
 
-body:before, body:after {
-    content: "";
-    position: fixed;
-    background: url(/assets/patterns/symphony.png) repeat;
-    left: 0;
-    right: 0;
-    height: 1.5em;
-    z-index: 800
-}
-body:before {
-    top: 0;
-}
-body:after {
-    bottom: 0;
-}
-body {
-    z-index: 800;
-    border-left: 1.5em solid #ffffff;
-    border-right: 1.5em solid #ffffff;
-    border-image: url(/assets/patterns/symphony.png);
-}
 
 a {
   color: inherit;
