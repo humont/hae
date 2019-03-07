@@ -24,7 +24,7 @@ collections:
     files:
       - label: "About"
         name: "about"
-        file: "site/content/about.md"
+        file: "site/about.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
@@ -37,7 +37,7 @@ collections:
               - {label: Photo, name: photo, widget: image}
       - label: "Contact"
         name: "contact"
-        file: "site/content/contact.md"
+        file: "site/contact.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
