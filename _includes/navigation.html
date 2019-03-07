@@ -1,16 +1,54 @@
 
+<div id="myNav" class="overlay">
+    <!-- Overlay content -->
+  <div class="overlay__content">
+    <div class="">
+      <a href="{{ "/index.html" | relative_url }}"><span class="flourish">&#10021;</span> Home</a>
+    </div>
+    <div class="">
+      <a href="{{ "/about.html" | relative_url }}"><span class="flourish">&#10021;</span> About</a>
+    </div>
+    <div class="">
+      <a href="{{ "/contact.html" | relative_url }}"><span class="flourish">&#10021;</span> Contact</a>
+    </div>
+    <div class="overlay__about">
+        
+    </div>
+  </div>
+</div>
 
 
-<nav class="nav-container_mobile">
-  <a class="hae" href="#">Hare and Edelweiss</a>
-  <button type="button" name="menu" onclick="openNav()">Menu</button>
+
+<nav class="menu_mobile">
+  <div class="logo-mobile">
+    <span class="letter">H</span><span class="symbol">&</span><span class="letter">E</span>
+  </div>
+  <button id="hmbrgr" onclick="openNav()" class="hamburger hamburger--collapse" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    <p>Menu</p>
+  </button>
 </nav>
 
-<nav class="nav-container">
-  <a class="hae" href="#">Hare and Edelweiss</a>
-  <ul>
-    <li>About</li>
-    <li>Blog</li>
-    <li>Contact</li>
-  </ul>
-</nav>
+
+<div class="body-wrapper">
+  
+  <nav class="menu_large">
+    <header>
+      <div class="logo">
+        <span>Hare &<br>Edelweiss</span>
+      </div>
+    </header>
+    
+    <div class="menu_item menu_item__first">
+      <span>&#10021; <a href="{{ "/index.html" | relative_url }}">Home</a></span>
+    </div>
+    <div class="menu_item">
+      <span>&#10021; <a href="{{ "/about.html" | relative_url }}">About</a></span>
+    </div>
+    <div class="menu_item menu_item__last">
+      <span>&#10021; <a href="{{ "/contact.html" | relative_url }}">Contact</a></span>
+    </div>
+  </nav>
+  

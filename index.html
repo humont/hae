@@ -2,59 +2,16 @@
 layout: default
 ---
 
-<section id="modalNav" class="modal">
+<!-- <p class="logo-2">Hare & Edelweiss</p> -->
 
+<p class="quote">"we endeavour to make items of distinction that will be cherished by other families for generations."</p>
 
-  <div class="modal__content">
-    <ul>
-      <li>About</li>
-      <li>Blog</li>
-      <li>Contact</li>
-    </ul>
-  </div>
-
+<section class="projects_section">
+  {% for project in site.projects %}
+  <a href="{{ project.url }}" class="project_card">
+    <img class="project_card_image" src="{{ project.splash }}" alt="">  
+    <span class="project_card_title"> H&E - {{ project.title }} </span>
+  </a>
+  {% endfor %}
+  
 </section>
-
-<div id="">
-
-<section class="slide" >
-
-  {% include navigation.html %}
-
-  <div class="content-container">
-    <span class="text">Section 1</span>
-  </div>
-</section>
-
-
-
-<section class="slide" >
-
-  {% include navigation.html %}
-
-  <div class="content-container">
-    <span class="text">Section 2</span>
-  </div>
-</section>
-
-
-<section class="slide" >
-
-  {% include navigation.html %}
-
-  <div class="content-container">
-    <span class="text">Section 3</span>
-  </div>
-</section>
-
-
-<section class="slide" >
-
-  {% include navigation.html %}
-
-  <div class="content-container">
-    <span class="text">Section 4</span>
-  </div>
-</section>
-
-</div>

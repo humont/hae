@@ -1,12 +1,320 @@
 ---
 ---
 
-// Partial Imports
-@import
-'01.settings/settings',
-'02.generics/generics',
-'03.elements/elements',
-'04.layouts/layouts',
-'05.modules/modules',
-'06.state/state',
-'07.utilities/utilities';
+//------
+// reset
+//------
+@import 
+'normalize',
+'hamburgers/hamburgers';
+
+//variables
+$border-large: 72px;
+$border-small: 18px;
+
+$color-background: white;
+$color-border: black;
+$text-color: black;
+$text-opposit: white;
+
+//--------
+// general
+//--------
+
+html {
+  font-family: copperplate, serif;
+  font-size: 16px;
+  color: $text-color;
+  background-color: $color-background;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $text-color;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 $border-small;
+}
+
+.menu_large {
+  flex-basis: 10em;
+  position: fixed;
+  height: 100vh;
+  z-index: 1;  
+}
+
+main {
+  flex-basis: 100%;
+  z-index: 3;
+  overflow-x: hidden;
+}
+
+@media (min-width:800px) {
+  main {
+    flex-basis: 80%;
+    margin: 0 10% 0 25%;
+  }
+  
+  .body-wrapper {
+    margin: 0;
+  }
+}
+
+// -------
+// Logo
+// -------
+
+.logo {
+  margin-left: $border-small;
+  margin-top: 1.5em;
+  padding: 4px;
+  line-height: 0.75;
+  font-family: copperplate, serif;
+  font-size: 2.5em;
+  color: rgba(0,0,0,1);
+  border: double 8px;
+}
+
+.logo-mobile{
+  padding-left: $border-small;
+
+  .letter {
+    font-size: 3em;
+  }
+  
+  .symbol{
+ }
+}
+
+
+//-----------
+// navigation
+//-----------
+.overlay {
+  position: fixed;
+  height: 0%;
+  width: 100vw;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  background-color: $text-color;
+  color: $color-background;
+  z-index: 800;
+  transition: 0.5s;
+  
+  a {
+    color: $color-background;
+  }
+}
+
+.overlay__content{
+  position: relative;
+  padding: $border-small;
+  padding-top: $border-large;
+  font-size: 2.5em;
+}
+
+.overlay__about{
+}
+
+.menu_mobile {
+  top: 0;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-right: $border-small;
+  background-color: $color-background;
+  left: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  z-index: 900;
+  
+  p {
+    margin: 0;
+  }
+}
+
+.mobMenu-active {
+  background-color: $text-color;
+  
+  .logo-mobile {
+    color: $color-background;
+  }
+}
+
+.flourish{
+  font-size: 0.5em;
+}
+
+#hmbrgr {
+  margin-left: auto;
+  top: 5px;
+  position: relative;
+}
+
+.show{
+  height: 100vh;
+}
+
+.menu_large {
+  display: none;
+}
+
+.menu_title {
+  font-size: 1.5em;
+}
+
+.menu_item {
+  margin-left: $border-small;
+  margin-bottom: $border-small;  
+  font-size: 1.5em;
+  
+  a:hover {
+    border-bottom: solid 1.5px black;
+  }
+}
+
+.menu_item__first {
+  margin-top: auto;
+}
+
+.menu_item__last {
+  margin-bottom: auto;
+}
+
+.color-flip {
+  color: $color-background;
+}
+
+@media (min-width:800px) {
+  .menu_mobile {
+    display: none;
+  }
+  
+  .menu_large {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+}
+
+//-----------------
+// project splashes
+//-----------------
+.logo-2{
+  text-align: center;
+  margin-top: 2.5em;
+  position: relative;
+  font-size: 2.5em;
+  color: rgba(250,250,250,0.5);
+  line-height: 0.75;
+}
+
+.quote {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 3.5em;
+}
+.projects_section {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  margin-top: 20vh;
+}
+
+.project_card {
+  margin-top: $border-small;
+  margin-bottom: $border-small;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project_card:hover span {
+  border-bottom: solid 1.5px black;
+}
+
+.project_card_image {
+  width:99%;
+  border: double 8px rgba(0,0,0,1);
+}
+
+.project_card_title {
+  border-bottom: solid 1.5px white;
+}
+
+@media (min-width:800px) {
+  .projects_section {
+    min-height: 100vh;
+    margin-top: 10vh;
+  }
+  
+  .project_card_image {
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .project_card_title {
+    margin-right: auto;
+    margin-left: 5%;
+    margin-top: 0;
+  }
+}
+
+//-----------------
+// project pages
+//-----------------
+
+.project_page {
+  
+  img {
+    width: 100%;
+    margin-top: $border-small;
+  }
+}
+
+@media (min-width:800px) {
+  .project_page {
+    .x_scroll_container {
+      overflow-x: scroll;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+    }
+
+    p {
+      height: 100vh;
+      margin-left: 2.5em;
+      
+      img {
+        margin-top: 30vh;
+        margin-bottom: 0;
+        height: 40vh;
+        max-height: 360px;
+        width: auto;
+      }
+      
+      img:last-of-type {
+        padding-right: 100%;
+      }
+    }
+  }
+}

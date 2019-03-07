@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: master
+
+publish_mode: editorial_workflow
+
+display_url: https://hareandeidelweiss.com
+
+media_folder: "/assets/"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "project"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Image", name: "image", widget: "file",  required: true}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
