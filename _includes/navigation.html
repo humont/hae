@@ -20,9 +20,9 @@
 
 
 <nav class="menu_mobile">
-  <div class="logo-mobile">
-    <span class="letter">H</span><span class="symbol">&</span><span class="letter">E</span>
-  </div>
+    <a href="{{ "/index.html" | relative_url }}" class="logo-mobile">
+      <span class="letter">H</span><span class="symbol">&</span><span class="letter">E</span>
+    </a>
   <button id="hmbrgr" onclick="openNav()" class="hamburger hamburger--collapse" type="button">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
@@ -37,7 +37,9 @@
   <nav class="menu_large">
     <header>
       <div class="logo">
-        <span>Hare &<br>Edelweiss</span>
+        <a href="{{ "/index.html" | relative_url }}" >
+          <span>Hare &<br>Edelweiss</span>
+        </a>  
       </div>
     </header>
     

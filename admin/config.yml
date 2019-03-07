@@ -4,7 +4,7 @@ backend:
 
 publish_mode: editorial_workflow
 
-display_url: https://hareandeidelweiss.com
+display_url: https://hareandedelweiss.com
 
 media_folder: "/assets/"
 
@@ -27,15 +27,9 @@ collections:
         name: "about"
         file: "about.md"
         fields:
-          - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
           - label: Team
             name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
       - label: "Contact"
         name: "contact"
         file: "contact.md"
