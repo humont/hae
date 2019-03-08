@@ -1,13 +1,11 @@
 ---
-layout: "project"
-title: "Third Eye"
-splash: "../assets/hae_landing.jpg"
-blurb: "this project created a third eye, and it was truly insightful."
+layout: project
+title: Peacock Silk Velvet Cushion
+splash: /assets/dsc02256.jpeg
+blurb: Commissioned for Interior Design project in Paris.
 ---
-![Third eye](../assets/hae_landing.jpg) here is a sentence or two about the project image you are currently looking at. isn't it great?!?!
+![Hand-embroidered original design. Semi-precious stones through tail. Silk velvet background.](/assets/dsc02256.jpeg)
 
-![Third eye](../assets/hae_landing.jpg) here is a sentence or two about the project image you are currently looking at. isn't it great?!?!
+![Close up of crown and eye detail. Hand embroidered. Colours chosen to match project palette.](/assets/dsc02358.jpeg)
 
-![Third eye](../assets/hae_landing.jpg) here is a sentence or two about the project image you are currently looking at. isn't it great?!?!
-
-![Third eye](../assets/hae_landing.jpg) here is a sentence or two about the project image you are currently looking at. isn't it great?!?!
+![Close up of tail flourishes. Hand embroidered, with semi-precious stones.](/assets/dsc01986.jpeg)
