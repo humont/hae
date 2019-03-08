@@ -1,10 +1,7 @@
 ---
-title: 'Contact us:'
-intro: |-
-  Email: hello@hareandedelweiss.com
-
-  Instagram: @hareandedelweiss
-locations:
-  - name: Hare and Edelweiss
+layout: contact
+email: 'hello@hareandedelweiss.com'
+instagram: 'hareandedelweiss'
 ---
 
+If you need to get in contact - you can do so at any of the following:

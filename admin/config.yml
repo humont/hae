@@ -27,18 +27,13 @@ collections:
         name: "about"
         file: "about.md"
         fields:
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Instagram", name: "instagram", widget: "string"}
       - label: "Contact"
         name: "contact"
         file: "contact.md"
         fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}

@@ -325,3 +325,55 @@ main {
     }
   }
 }
+
+//-----------------
+// contact pages
+//-----------------
+
+.contact-page, .about-page {
+  margin-top: 5em;
+  display: block;
+  text-align: center;
+}
+
+.contact-link-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-link {
+  border: double 8px black;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  width: 30%;
+  min-width: 150px;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.contact-link:hover {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
+
+
+@media (min-width:800px) {
+  .contact-page, .about-page {
+    margin-top: 10em;
+    margin-left: 2.5em;
+  }
+}
+
+
+//-----------------
+// about pages
+//-----------------
+
+.about-page {
+  
+}
