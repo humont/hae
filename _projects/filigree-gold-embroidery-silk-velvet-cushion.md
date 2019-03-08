@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Filigree Gold Silk Velvet Cushion
+title: Gold Filigree Silk Velvet Cushion
 splash: /assets/dsc02047.jpeg
 blurb: Commissioned for Interior Design Project in Paris.
 ---
