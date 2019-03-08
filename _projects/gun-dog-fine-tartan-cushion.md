@@ -3,7 +3,7 @@ layout: project
 title: Gun Dog Fine Tartan Cushion
 splash: /assets/img_6946.jpg
 blurb: >-
-  Commission of a beloved pet. Soft cream and chocolate hand-cut suede on a fine
+  Commission of beloved pet. Soft cream and chocolate hand-cut suede on a fine
   tartan background. Private Client.
 ---
 ![Full cushion, hand-cut suede and hand-embroidered details.](/assets/img_6946.jpg) Full cushion, hand-cut suede and hand-embroidered details.
